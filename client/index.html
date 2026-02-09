@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phibo | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.16.0/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .profile-ring {
+            border: 1px solid #e5e7eb;
+            padding: 10px;
+        }
+        .bg-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+
+    <!-- Header / Navigation -->
+    <nav class="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto">
+        <div class="flex space-x-6 text-sm font-medium">
+            <a href="#home" class="nav-link text-blue-500">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#follow" class="nav-link">Follow</a>
+        </div>
+        <div class="text-2xl font-bold serif">Phibo</div>
+        <div class="flex space-x-4 text-gray-600">
+            <a href="mailto:philbertniyoniringi@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.tiktok.com/@phibo_show" target="_blank" rel="noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/250794089066" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/phibo_official/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="max-w-5xl mx-auto pt-16 pb-24 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Hey, I'm <span class="text-blue-500">Phibo.</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 serif italic mb-16">
+            Full Stack Developer focused on modern web systems.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+            <!-- Left Stats -->
+            <div class="text-left space-y-8 hidden md:block">
+                <div>
+                    <h3 class="font-bold text-lg mb-2 underline decoration-blue-500 decoration-2 underline-offset-4">Biography</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">I am Philbert Niyoniringiye (Phibo), a full stack developer focused on modern web systems. I build clean interfaces with Tailwind CSS and powerful backends with Node.js.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2 underline decoration-blue-500 decoration-2 underline-offset-4">Skills Stack</h3>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>- HTML5, CSS3, JavaScript</li>
+                        <li>- Tailwind CSS, Node.js, Express</li>
+                        <li>- MongoDB, REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Central Profile Image -->
+            <div class="relative flex justify-center">
+                <div class="profile-ring rounded-full">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="assets/profile.jpg" alt="Phibo" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Stats -->
+            <div class="text-right space-y-8 hidden md:block">
+                <div>
+                    <h2 class="text-3xl font-bold">Frontend</h2>
+                    <p class="text-sm text-gray-500">Tailwind CSS and UI</p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Backend</h2>
+                    <p class="text-sm text-gray-500">Node.js and Express</p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Database</h2>
+                    <p class="text-sm text-gray-500">MongoDB</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <p class="text-gray-400 uppercase tracking-widest text-xs font-bold mb-8">Core Stack</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale">
+                <span class="font-bold text-xl italic">HTML5</span>
+                <span class="font-bold text-xl italic">CSS3</span>
+                <span class="font-bold text-xl italic">JavaScript</span>
+                <span class="font-bold text-xl italic">Node.js</span>
+                <span class="font-bold text-xl italic">MongoDB</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-24 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">I build modern, reliable web applications with strong UI, robust APIs, and scalable data models. I care about performance, security, and clarity from the first wireframe to production.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-4">Experience</h3>
+                    <div class="space-y-4 text-sm text-gray-500">
+                        <div>
+                            <p class="font-semibold text-gray-700">Full Stack Projects</p>
+                            <p>Built web platforms with clean UI, REST APIs, and MongoDB data models.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">Client Work</p>
+                            <p>Delivered reliable solutions with clear communication and smooth handover.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">Product Thinking</p>
+                            <p>Focused on user flow, speed, and maintainability in every build.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-4">Timeline</h3>
+                    <div class="space-y-4 text-sm text-gray-500">
+                        <div>
+                            <p class="font-semibold text-gray-700">2023 - 2024</p>
+                            <p>Focused on frontend and component systems.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">2024 - 2025</p>
+                            <p>Deepened backend skills with Node.js and Express.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">2025 - 2026</p>
+                            <p>Scaled full stack apps with MongoDB and API design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-4">Education</h3>
+                    <div class="space-y-4 text-sm text-gray-500">
+                        <div>
+                            <p class="font-semibold text-gray-700">Self-Led Learning</p>
+                            <p>Hands-on practice through real projects and continuous improvement.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">Online Courses</p>
+                            <p>Focused on full stack development, APIs, and database design.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">Community</p>
+                            <p>Learning through collaboration and building in public.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-24">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-16">I build full stack products that connect strong frontend experiences with reliable backend services. Below are selected works that combine UI, backend logic, and real-world workflows.</p>
+            <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                <div class="text-sm text-gray-500">Loading projects...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="max-w-6xl mx-auto py-24 px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6">Ready to build something solid?</h2>
+                <p class="text-gray-500 mb-8 leading-relaxed">I focus on clean UI, strong backend logic, and data systems that scale with your business. Let's make your next product fast, reliable, and easy to use.</p>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg hover:shadow-blue-200 flex items-center space-x-2">
+                    <span>Hire Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="mt-8">
+                    <p class="text-sm text-gray-400">Email Me At:</p>
+                    <p class="font-bold">philbertniyoniringi@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?q=80&w=600&auto=format&fit=crop" alt="Workspace" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white py-24 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <p class="text-gray-500 max-w-xl mx-auto mb-16">I combine frontend craftsmanship with backend reliability to deliver complete web solutions.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-html5-plain colored text-2xl"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-css3-plain colored text-2xl"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-javascript-plain colored text-2xl"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-tailwindcss-plain colored text-2xl"></i>
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-nodejs-plain colored text-2xl"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-express-original text-2xl"></i>
+                    <span>Express</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-mongodb-plain colored text-2xl"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="step-card bg-gray-50 p-6 rounded-xl flex items-center gap-3">
+                    <i class="devicon-postman-plain colored text-2xl"></i>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="max-w-6xl mx-auto py-24 px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">My Services</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-lg flex items-center justify-center mb-6 text-xl">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-4">Frontend Development</h3>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">Responsive UI with Tailwind CSS and modern JavaScript.</p>
+                <a href="#contact" class="text-blue-500 font-bold text-xs uppercase tracking-wider flex items-center">Learn More <i class="fas fa-chevron-right ml-2"></i></a>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-lg flex items-center justify-center mb-6 text-xl">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-4">Backend APIs</h3>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">Secure REST APIs with Node.js and Express.</p>
+                <a href="#contact" class="text-blue-500 font-bold text-xs uppercase tracking-wider flex items-center">Learn More <i class="fas fa-chevron-right ml-2"></i></a>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-lg flex items-center justify-center mb-6 text-xl">
+                    <i class="fas fa-vector-square"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-4">MongoDB Modeling</h3>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">Efficient NoSQL schemas and data management.</p>
+                <a href="#contact" class="text-blue-500 font-bold text-xs uppercase tracking-wider flex items-center">Learn More <i class="fas fa-chevron-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="bg-white py-24 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Blog</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Short insights about building fast, scalable web apps.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="bg-gray-50 p-6 rounded-2xl">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Frontend</p>
+                    <h3 class="font-bold text-xl mb-3">Building Clean UI with Tailwind</h3>
+                    <p class="text-sm text-gray-500 mb-4">Patterns I use to keep UI consistent, fast, and easy to maintain.</p>
+                    <a href="#contact" class="text-blue-500 text-sm font-bold">Read More</a>
+                </article>
+                <article class="bg-gray-50 p-6 rounded-2xl">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Backend</p>
+                    <h3 class="font-bold text-xl mb-3">Designing Reliable APIs</h3>
+                    <p class="text-sm text-gray-500 mb-4">How I structure routes, validation, and error handling in Express.</p>
+                    <a href="#contact" class="text-blue-500 text-sm font-bold">Read More</a>
+                </article>
+                <article class="bg-gray-50 p-6 rounded-2xl">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Database</p>
+                    <h3 class="font-bold text-xl mb-3">MongoDB Models That Scale</h3>
+                    <p class="text-sm text-gray-500 mb-4">Choosing collections, indexes, and relationships for growth.</p>
+                    <a href="#contact" class="text-blue-500 text-sm font-bold">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="max-w-6xl mx-auto py-24 px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">FAQ</h2>
+            <p class="text-gray-500 max-w-xl mx-auto">Common questions about my process and services.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <details class="bg-white p-6 rounded-2xl border border-gray-100">
+                <summary class="font-semibold cursor-pointer">How long does a project take?</summary>
+                <p class="text-sm text-gray-500 mt-3">Timelines depend on scope. A simple site can be 1 to 2 weeks, while a full web app may take 4 to 8 weeks.</p>
+            </details>
+            <details class="bg-white p-6 rounded-2xl border border-gray-100">
+                <summary class="font-semibold cursor-pointer">Do you work with existing designs?</summary>
+                <p class="text-sm text-gray-500 mt-3">Yes. I can implement your design or refine it for better UX and performance.</p>
+            </details>
+            <details class="bg-white p-6 rounded-2xl border border-gray-100">
+                <summary class="font-semibold cursor-pointer">Can you handle backend and database?</summary>
+                <p class="text-sm text-gray-500 mt-3">Yes. I build REST APIs with Express and scalable data models with MongoDB.</p>
+            </details>
+            <details class="bg-white p-6 rounded-2xl border border-gray-100">
+                <summary class="font-semibold cursor-pointer">What do you need to start?</summary>
+                <p class="text-sm text-gray-500 mt-3">A clear goal, reference examples if possible, and any existing content or brand assets.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-24 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Contact</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Tell me about your project and I will get back to you.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-4">Let’s talk</h3>
+                    <p class="text-sm text-gray-500 mb-6">Use the form to send a message or reach me directly.</p>
+                    <div class="space-y-3 text-sm text-gray-500">
+                        <p><span class="font-semibold text-gray-700">Email:</span> philbertniyoniringi@gmail.com</p>
+                        <p><span class="font-semibold text-gray-700">WhatsApp:</span> 0794089066</p>
+                        <p><span class="font-semibold text-gray-700">Instagram:</span> phibo_official</p>
+                    </div>
+                </div>
+                <form class="bg-white p-8 rounded-2xl border border-gray-100" onsubmit="submitContact(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="text-sm font-semibold">Name</label>
+                            <input name="name" type="text" required class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold">Email</label>
+                            <input name="email" type="email" required class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm" placeholder="you@email.com">
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <label class="text-sm font-semibold">Message</label>
+                        <textarea name="message" rows="5" required class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm" placeholder="Tell me about your project"></textarea>
+                    </div>
+                    <div class="mt-6 flex items-center gap-4">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition-all">Send Message</button>
+                        <span id="contactStatus" class="text-sm text-gray-500"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 serif italic">Have a great idea in mind?<br>Let's make it real</h2>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-full font-bold transition-all shadow-xl hover:scale-105">
+                    Start Project Together
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pb-12">
+                <div>
+                    <div class="text-2xl font-bold serif mb-4">Phibo</div>
+                    <p class="text-sm text-gray-500 max-w-xs mb-6">Full stack developer dedicated to crafting fast, secure, and user-friendly web experiences.</p>
+                    <div class="flex space-x-4 text-gray-400">
+                        <a href="mailto:philbertniyoniringi@gmail.com" class="hover:text-blue-500"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.tiktok.com/@phibo_show" target="_blank" rel="noreferrer" class="hover:text-blue-500"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/250794089066" target="_blank" rel="noreferrer" class="hover:text-blue-500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/phibo_official/" target="_blank" rel="noreferrer" class="hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div id="follow" class="text-right flex flex-col justify-end">
+                    <p class="text-xs text-gray-400">Everything I build is focused on performance, security, and great UX.</p>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-50 flex flex-col md:row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2026 Phibo. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Built by Phibo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadProjects() {
+            const grid = document.getElementById('projectsGrid');
+            if (!grid) return;
+            grid.innerHTML = '<div class="text-gray-500">Loading projects...</div>';
+
+            try {
+                const response = await fetch('/api/projects');
+                const data = await response.json();
+                const projects = data.projects || [];
+
+                if (!projects.length) {
+                    grid.innerHTML = '<div class="text-gray-500">No projects yet.</div>';
+                    return;
+                }
+
+                grid.innerHTML = projects
+                    .map(
+                        (project) => `
+                            <div class="step-card bg-gray-50 p-8 rounded-xl">
+                                <h3 class="font-bold text-xl mb-2">${project.title}</h3>
+                                <p class="text-sm text-gray-500 mb-4">${project.summary}</p>
+                                <p class="text-xs uppercase tracking-wide text-gray-400">${project.stack.join(' · ')}</p>
+                            </div>
+                        `
+                    )
+                    .join('');
+            } catch (error) {
+                grid.innerHTML = '<div class="text-gray-500">Failed to load projects.</div>';
+            }
+        }
+
+        async function submitContact(event) {
+            event.preventDefault();
+            const form = event.target;
+            const status = document.getElementById('contactStatus');
+            status.textContent = 'Sending...';
+
+            const payload = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const data = await response.json().catch(() => ({}));
+                    throw new Error(data.error || 'Request failed');
+                }
+
+                form.reset();
+                status.textContent = 'Message sent. Thank you!';
+            } catch (error) {
+                status.textContent = error.message || 'Sorry, something went wrong.';
+            }
+        }
+
+        loadProjects();
+    </script>
+</body>
+</html>
